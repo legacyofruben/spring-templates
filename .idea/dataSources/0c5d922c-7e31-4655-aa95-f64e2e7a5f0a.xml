@@ -1,0 +1,26 @@
+<dataSource name="MySQL - Spring Training@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="Spring Training">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="users" />
+    <column id="3" parent="2" name="idusers">
+      <mandatory>1</mandatory>
+      <data-type>INT(10)|4</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="4" parent="2" name="userName">
+      <data-type>VARCHAR(45)|12</data-type>
+    </column>
+    <column id="5" parent="2" name="userPass">
+      <data-type>VARCHAR(45)|12</data-type>
+    </column>
+    <column id="6" parent="2" name="userImage">
+      <data-type>VARCHAR(45)|12</data-type>
+    </column>
+    <key id="7" parent="2" name="PRIMARY">
+      <columns>idusers</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
